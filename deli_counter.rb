@@ -19,6 +19,18 @@ def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end
 
+
+$counter = 1
+def take_a_number
+  number = $counter
+  $counter += 1 
+  puts "Order Number #{number}."
+end
+puts take_a_number
+puts take_a_number
+puts take_a_number
+
+
 def now_serving(katz_deli)
   if katz_deli.empty?
     puts "There is nobody waiting to be served!"
